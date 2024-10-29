@@ -31,8 +31,8 @@ Data Sources and APIs
 
 For further setup instructions, refer to the individual GitHub repositories and their respective documentation:
 
-	•	NoiseModelling: https://github.com/Universite-Gustave-Eiffel/NoiseModelling
-	•	Superblock Finder: https://github.com/dymat/superblocks/tree/master
-	•	OpenRouteService: https://github.com/GIScience/openrouteservice
+	•	[NoiseModelling](https://github.com/Universite-Gustave-Eiffel/NoiseModelling)
+	•	[Superblock Finder](https://github.com/dymat/superblocks/tree/master)
+	•	[OpenRouteService](https://github.com/GIScience/openrouteservice) 
 
 Note: Full methodological details and a visual workflow are WIP and will be added soon.
