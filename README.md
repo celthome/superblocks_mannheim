@@ -22,17 +22,16 @@ We implemented Superblock Finder (SF) locally to identify suitable building bloc
 
 Using the adjusted road classifications, we simulated three noise scenarios within superblocks, comparing changes in area-specific noise levels (ΔLDEN) against baseline metrics.
 
-Data Sources and APIs
-
-	•	POI Data: OSM, extracted via Overpass API
-	•	Accessibility Isochrones: OpenRouteService (ORS)
-	•	Noise Propagation: NoiseModelling (NM)
-	•	Population Data: WorldPop
+Data Sources and APIs 
+- POI Data: OSM, extracted via Overpass API 
+- Accessibility Isochrones: OpenRouteService (ORS)
+- Noise Propagation: NoiseModelling (NM)
+- Population Data: WorldPop
 
 For further setup instructions, refer to the individual GitHub repositories and their respective documentation:
 
-	•	[NoiseModelling](https://github.com/Universite-Gustave-Eiffel/NoiseModelling)
-	•	[Superblock Finder](https://github.com/dymat/superblocks/tree/master)
-	•	[OpenRouteService](https://github.com/GIScience/openrouteservice) 
+- NoiseModelling: https://github.com/Universite-Gustave-Eiffel/NoiseModelling
+- Superblock Finder: https://github.com/dymat/superblocks/tree/master
+- OpenRouteService: https://github.com/GIScience/openrouteservice
 
-Note: Full methodological details and a visual workflow are WIP and will be added soon.
+Note: Full methodological details will be added soon.
