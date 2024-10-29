@@ -1,0 +1,7 @@
+// Description: List of software packages installed outside of scripts
+
+pgAdmin 4 (6.1)
+PostgreSQL (14.1)
+PostGIS (3.2)
+NoiseModelling (4.0.5)
+QGIS (3.34.11)
