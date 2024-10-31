@@ -1,0 +1,69 @@
+version: '3'
+services:
+  overpass:
+    image: wiktorn/overpass-api:0.7.56.4
+    environment:
+      OVERPASS_META: yes
+      OVERPASS_MODE: init
+      #OVERPASS_PLANET_URL: https://download.geofabrik.de/europe/germany-latest.osm.bz2
+      OVERPASS_PLANET_URL: http://download.geofabrik.de/europe/germany/berlin-latest.osm.bz2
+      #OVERPASS_DIFF_URL: http://download.openstreetmap.fr/replication/europe/monaco/minute/
+      OVERPASS_RULES_LOAD: 10
+    volumes:
+      - overpass_db:/db
+    restart: unless-stopped
+    #ports:
+    #  - 127.0.0.1:12345:80
+
+  superblock:
+    build: superblock_finder
+    depends_on:
+      - overpass
+      - postgis
+    volumes:
+      - ./data:/data
+      - ./superblock_finder/superblock.py:/superblock.py:ro
+      - ./superblock_finder/preprocess_osm.py:/preprocess_osm.py:ro
+      - ./superblock_finder/app.py:/app.py:ro
+      - ./superblock_finder/_types:/_types:ro
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_DATABASE: ${POSTGRES_DATABASE}
+    ports:
+      - 127.0.0.1:9123:8000
+    command: "uvicorn app:app --port 8000 --host '0.0.0.0'"
+    restart: on-failure
+
+  frontend:
+    build:
+      context: frontend
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - ./frontend/package.json:/app/package.json
+      - ./frontend/package-lock.json:/app/package-lock.json
+    ports:
+      - 127.0.0.1:3000:3000
+
+  postgis:
+    image: postgis/postgis:15-3.3-alpine
+    restart: on-failure
+    #ports:
+    #  - 127.0.0.1:5432:5432
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DATABASE: ${POSTGRES_DATABASE}
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 127.0.0.1:8888:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "denny.mattern@pd-g.de"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+
+volumes:
+  overpass_db:
