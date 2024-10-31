@@ -20,7 +20,7 @@ We implemented Superblock Finder (SF) locally to identify suitable building bloc
 
 4. Noise Re-Simulation for Superblocks
 
-Using the adjusted road classifications, we simulated three noise scenarios within superblocks, comparing changes in area-specific noise levels (ΔLDEN) against baseline metrics.
+Using the adjusted road classifications, we simulated three noise scenarios within superblocks, comparing changes in area-specific noise levels (ΔLden) against baseline metrics.
 
 Data Sources and APIs 
 - POI Data: OSM, extracted via Overpass API 
