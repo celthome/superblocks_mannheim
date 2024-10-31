@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 
 import os
 import sys
-path_superblocks = os.path.abspath(os.path.join(os.path.dirname('C:/Users/maren/Documents/UniGeo/Master/SoSe2024/KlForscherguppe/Eggimann_code/superblocks-master/superblock_finder'), ''))
+path_superblocks = os.path.abspath(os.path.join(os.path.dirname('SF/superblocks-master/superblock_finder'), ''))
 sys.path.append(path_superblocks)
 import time
 import geopandas as gpd
@@ -46,7 +46,7 @@ crs_overpass = 4326
 
 path_temp = "/data/tmp"
 path_out = "/data/cities"
-path_pop_data = "C:/Users/maren/Documents/UniGeo/Master/SoSe2024/KlForscherguppe/Eggimann_code/superblocks-master/superblock_finder/deu_pd_2020_1km.tif"  # Download data as outlined from data source in publication
+path_pop_data = "SF/superblocks-master/superblock_finder/deu_pd_2020_1km.tif"  # Download data as outlined from data source in publication
 write_anyway = False
 
 try:

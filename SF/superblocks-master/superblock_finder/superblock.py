@@ -14,7 +14,7 @@ import sys
 import warnings
 warnings.filterwarnings("ignore")
 
-path_superblocks = os.path.abspath(os.path.join(os.path.dirname('C:/Users/maren/Documents/UniGeo/Master/SoSe2024/KlForscherguppe/Eggimann_code/superblocks-master/superblock_finder'), ''))
+path_superblocks = os.path.abspath(os.path.join(os.path.dirname('SF/superblocks-master/superblock_finder'), ''))
 sys.path.append(path_superblocks)
 import logging
 import networkx as nx
