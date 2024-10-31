@@ -6,4 +6,4 @@ It was utilized to identify potential Superblocks for our project.
 First, SF/superblocks-master/superblock_finder.preprocess_osm.py has to be run to download and preprocess the data for the AoI.
 After that, potential superblocks can be identified using SF/superblocks-master/superblock_finder/superblock.py.
 
-The results can be extracted from the associated PostgreSQL database used by the script.
+The results can be extracted from the associated PostgreSQL database used by the script and visualized by QGIS.
