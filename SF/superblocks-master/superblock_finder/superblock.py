@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 """
 Main file. Before running this file, openstreetmap data needs to be downloaded by preprocess_osm
 
