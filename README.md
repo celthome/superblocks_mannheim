@@ -22,6 +22,16 @@ We implemented Superblock Finder (SF) locally to identify suitable building bloc
 
 Using the adjusted road classifications, we simulated three noise scenarios within superblocks, comparing changes in area-specific noise levels (ΔLden) against baseline metrics.
 
+Results from Noise Simulation:
+
+<img src="https://github.com/user-attachments/assets/4ca68693-941b-4605-912a-69cdb2293458" alt="simulation" width="700">
+<br><br>
+
+Noise level changes (ΔLden):
+
+<img src="https://github.com/user-attachments/assets/77c06379-1954-4b14-8d82-70673cea5683" alt="db_delta" width="500">
+<br><br>
+
 Data Sources and APIs 
 - POI Data: OSM, extracted via Overpass API 
 - Accessibility Isochrones: OpenRouteService (ORS)
