@@ -29,7 +29,7 @@ Results from Noise Simulation:
 
 Noise level changes (ΔLden):
 
-<img src="https://github.com/user-attachments/assets/77c06379-1954-4b14-8d82-70673cea5683" alt="db_delta" width="500">
+<img src="figures/db_delta.jpeg" alt="db_delta" width="500">
 <br><br>
 
 Data Sources and APIs 
