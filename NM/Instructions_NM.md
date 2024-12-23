@@ -6,4 +6,4 @@ To simulate individual scenarios, the data was manipulated locally, and then the
 
 To visualize the difference in noise levels, the previously described steps were repeated using 1dB steps.
 
-The results (repo-folder: output/nm) were visualized using QGIS.
+The results were visualized using QGIS and can be found [here](https://github.com/celthome/superblocks_mannheim/tree/main/output/nm).
