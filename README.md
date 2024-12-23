@@ -31,13 +31,8 @@ Using the adjusted road classifications and NM, we simulated three noise scenari
 
 #### Noise level changes (ΔLden):
 
-<<<<<<< HEAD
 <img src="https://github.com/user-attachments/assets/77c06379-1954-4b14-8d82-70673cea5683" alt="db_delta" width="500">
 <br>
-=======
-<img src="figures/db_delta.jpeg" alt="db_delta" width="500">
-<br><br>
->>>>>>> 481c1d8b2e8bdc876fef48cfa0bd5b12e7ac8d63
 
 #### Data Sources and APIs 
 - POI Data: OSM, extracted via Overpass API 
