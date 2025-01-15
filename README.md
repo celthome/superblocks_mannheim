@@ -9,7 +9,7 @@ Instructions for setting up the Python environment are provided [here](https://g
 #### 1. Superblock Finder ([SF](https://github.com/celthome/superblocks_mannheim/tree/main/SF))
 We implemented the SF locally to identify suitable building blocks based on network and spatial criteria (e.g., street loop length, density). 
 
-#### 2. Superblock Accessibility Assessment ([using ORS](https://github.com/celthome/superblocks_mannheim/tree/main/ORS))
+#### 2. Superblock Accessibility Assessment ([using ORS](https://github.com/celthome/superblocks_mannheim/tree/main/ORS/Instructions_ORS.md))
 POI accessibility within superblocks was analyzed using the 5-Minute City (FMC) approach. POIs (categories: Food, Commercial, Health, Education, Recreation) were extracted from OSM using Overpass API, processed for accessibility with OpenRouteService (ORS), and filtered for superblock compliance.
 <br>
 In our study area, one superblock was identified that meets the FMC criteria.
