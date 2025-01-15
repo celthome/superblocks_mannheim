@@ -9,7 +9,7 @@ Follow the steps below to get started with using the OpenRouteService API with t
 Before using the script, make sure you have the following:
 1. **Environment installed**: Ensure you have installed the provided requirements on your system.
 ```python
-pip install -r requirements.txt
+pip install -r conf/env.yml
 ```
 2. **API Key**: Obtain an API key from OpenRouteService by following the instructions below.
 
