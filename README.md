@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/879286231.svg)](https://doi.org/10.5281/zenodo.14644660)
+
 # NoiseModelling and Superblock Finder Analysis
 
 This repository provides a detailed workflow for modeling traffic noise and accessibility in urban superblocks. Using open-source software and data, it evaluates noise propagation and POI accessibility, aimed at enhancing urban planning. 
