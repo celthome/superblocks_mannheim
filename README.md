@@ -15,6 +15,7 @@ We implemented the SF locally to identify suitable building blocks based on netw
 POI accessibility within superblocks was analyzed using the 5-Minute City (FMC) approach. POIs (categories: Food, Commercial, Health, Education, Recreation) were extracted from OSM using Overpass API, processed for accessibility with OpenRouteService (ORS), and filtered for superblock compliance.
 <br>
 In our study area, one superblock was identified that meets the FMC criteria.
+<img src="figures/superblock.png" alt="workflow_overview" width="700">
 
 #### 3. Noise Simulation for Superblocks ([NM](https://github.com/celthome/superblocks_mannheim/tree/main/NM))
 We set up a local instance of NM following CNOSSOS-EU guidelines, which models sound propagation based on road type defaults. OpenStreetMap (OSM) data, sourced via BBBike.de, supports baseline noise level calculations. 
