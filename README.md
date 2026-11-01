@@ -36,7 +36,7 @@ By adjusting the road classifications within the superblock and using NM, we sim
 
 #### Noise level changes (ΔLden):
 
-<img src="figures/db_delta.jpeg" alt="db_delta" width="500">
+<img src="figures/en/db_delta.jpeg" alt="db_delta" width="500">
 <br>
 
 #### Data Sources and APIs 
